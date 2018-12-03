@@ -1,0 +1,21 @@
+$gray-base:              $custom-black;
+$gray-darker:            $custom-dark-gray;
+$gray-light:			 $custom-gray-light;
+
+$brand-primary: 		 $custom-yellow;
+
+
+$text-color:            $gray-darker;
+$body-bg:               $custom-white;
+
+$navbar-default-bg:     transparent;
+
+$link-color:            $gray-base;
+$link-hover-color:      lighten($link-color, 20%);
+$link-hover-decoration: none;
+
+$navbar-height: 72px;
+$navbar-margin-bottom: 0;
+
+$navbar-default-link-color:                $gray-base;
+$navbar-default-link-hover-color:          lighten($link-color, 20%);
