@@ -8707,10 +8707,6 @@ q:after {
   display: none;
 }
 
-.header {
-  background-color: #fcdb00;
-}
-
 .navbar-brand {
   padding: 15px 15px;
 }
@@ -8723,6 +8719,20 @@ q:after {
   overflow: hidden;
   position: relative;
   max-width: 100%;
+}
+
+.common-section {
+  padding: 30px 0;
+}
+
+@media (min-width: 992px) {
+  .common-section {
+    padding: 100px 0;
+  }
+}
+
+.yellow-bg {
+  background-color: #fcdb00;
 }
 
 
