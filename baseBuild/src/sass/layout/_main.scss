@@ -38,7 +38,10 @@ body {
 	}
 
 	.icons-holder {
-
+		@media screen and (max-width: 991px) {
+			display: flex;
+			justify-content: space-around;
+		}
 		margin-top: 40px;
 	}
 
