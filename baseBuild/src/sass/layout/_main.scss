@@ -35,6 +35,10 @@ body {
 	.title-holder {
 
 		margin-bottom: 30px;
+
+		@media all and (max-width: 991px) {
+			text-align: center;
+		}
 	}
 
 	.icons-holder {

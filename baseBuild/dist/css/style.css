@@ -8760,6 +8760,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media all and (max-width: 991px) {
+  .slide .title-holder {
+    text-align: center;
+  }
+}
+
 .slide .icons-holder {
   margin-top: 40px;
 }
