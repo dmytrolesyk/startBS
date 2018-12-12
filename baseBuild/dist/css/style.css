@@ -8520,14 +8520,6 @@ h1 {
   }
 }
 
-h2 {
-  text-transform: capitalize;
-}
-
-h3 {
-  text-transform: capitalize;
-}
-
 p {
   margin: 0 0 10px;
 }
@@ -8755,19 +8747,9 @@ body {
 }
 
 .common-icon {
-  display: inline-block;
   vertical-align: top;
   font-size: 40px;
   margin: 0 20px;
-}
-
-.table {
-  display: table;
-}
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .slide {
@@ -8780,6 +8762,15 @@ body {
 
 .slide .icons-holder {
   margin-top: 40px;
+}
+
+.slide .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slick-dots {
@@ -8824,6 +8815,38 @@ body {
 
 .slick-dots button {
   display: none;
+}
+
+.features-section .features-intro {
+  margin-bottom: 40px;
+}
+
+@media all and (min-width: 992px) {
+  .features-section .features-intro {
+    margin-bottom: 80px;
+  }
+}
+
+.features-section .features-intro .title-holder {
+  margin-bottom: 30px;
+}
+
+.feature-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #898989;
+  margin-bottom: 30px;
+}
+
+@media all and (min-width: 992px) {
+  .feature-article {
+    margin-bottom: 70px;
+  }
+}
+
+.feature-article .title-holder {
+  margin-bottom: 15px;
 }
 
 

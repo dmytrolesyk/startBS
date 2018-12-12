@@ -22,30 +22,30 @@ body {
 }
 
 .common-icon {
-	display: inline-block;
+	
 	vertical-align: top;
 	font-size: 40px;
 	margin: 0 20px;
 }
 
-.table {
-	display: table;
-	//height: 100%
-}
-
-.table-cell {
-	display: table-cell;
-	vertical-align: middle;
-}
-
 .slide {
+
 	position: relative;
+
 	.title-holder {
+
 		margin-bottom: 30px;
 	}
 
 	.icons-holder {
+
 		margin-top: 40px;
+	}
+
+	.row {
+
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -81,6 +81,7 @@ body {
 		&:hover,
 		&.slick-active {
 			&:before {
+
 				background-color: rgba(white, 1);
 			}
 		}
@@ -88,7 +89,42 @@ body {
 	}
 
 	button {
+
 		display: none;
 	}
 
 }
+
+.features-section {
+
+	.features-intro {
+
+		margin-bottom: 40px;
+		@media all and (min-width: 992px) {
+
+			margin-bottom: 80px;
+		}
+		.title-holder {
+
+		margin-bottom: 30px;
+
+		}
+	}
+}
+
+.feature-article {
+
+	display: flex;
+	color: $custom-gray-light;
+	margin-bottom: 30px;
+
+	@media all and (min-width: 992px) {
+
+		margin-bottom: 70px;
+	}
+
+	.title-holder {
+		margin-bottom: 15px;
+	}
+}
+
