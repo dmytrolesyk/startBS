@@ -8752,6 +8752,13 @@ body {
   margin: 0 20px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .img-holder {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
 .slide {
   position: relative;
 }
@@ -8777,6 +8784,7 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    margin-bottom: 40px;
   }
 }
 
