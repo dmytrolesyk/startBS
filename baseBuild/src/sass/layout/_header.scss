@@ -2,8 +2,23 @@
 	padding: 15px 15px;
 }
 
+.navbar {
+	@media screen and (min-width: 992px) {
+		margin-top: 50px;
+	}
+}
+
 .navbar-nav {
+
+	li {
+		margin-right: 70px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 	a {
 		font-weight: bold;
+		font-size: $font-size-h3;
 	}
 }
