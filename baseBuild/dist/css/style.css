@@ -8858,7 +8858,13 @@ body {
 }
 
 .feature-article .title-holder {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 992px) {
+  .feature-article .title-holder {
+    margin-bottom: 15px;
+  }
 }
 
 

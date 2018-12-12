@@ -128,7 +128,10 @@ body {
 	}
 
 	.title-holder {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+		@media all and (min-width: 992px) {
+			margin-bottom: 15px;
+		}
 	}
 }
 
