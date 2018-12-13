@@ -1,7 +1,3 @@
-.black-bg {
-	background-color: $custom-black;
-}
-
 .block-inverse {
 	color: $custom-white;
 	background-color: $custom-black;
@@ -65,17 +61,13 @@
 			flex: 0 0 20%;
 		}
 	}
-}
 
-
-.my-form {
 	.form-group {
 		[type="email"] {
 			width: 100%;
 		}
 	}
 }
-
 
 .footer-list {
 	@media (max-width: 991px) {
