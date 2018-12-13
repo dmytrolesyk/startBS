@@ -1,0 +1,93 @@
+.black-bg {
+	background-color: $custom-black;
+}
+
+.block-inverse {
+	color: $custom-white;
+	background-color: $custom-black;
+	a {
+		color: $custom-white;
+		font-weight: normal;
+	}
+	.section-intro {
+		color: $custom-gray-light;
+	}
+
+	.icons-holder {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		@media (min-width: 768px) {
+			margin-bottom: 60px;
+		}
+		@media (min-width: 992px) {
+			margin-bottom: 120px;
+		}
+		a {
+			color: $brand-primary;
+		}
+	}
+
+}
+
+.my-form {
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+
+	> * {
+		flex: 0 0 100%;
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		margin-bottom: 45px;
+		flex-wrap: nowrap;
+		justify-content: center;
+		
+		> * {
+			flex: 0 0 45%;
+			&:first-child {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		margin-bottom: 75px;
+		flex-wrap: nowrap;
+		justify-content: center;
+		.form-group {
+			flex: 0 0 70%;
+			margin-right: 15px;
+		}
+
+		button[type="submit"] {
+			flex: 0 0 20%;
+		}
+	}
+}
+
+
+.my-form {
+	.form-group {
+		[type="email"] {
+			width: 100%;
+		}
+	}
+}
+
+
+.footer-list {
+	@media (max-width: 991px) {
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: 768px) {
+		display: flex;
+		justify-content: flex-start;
+
+		> * {
+			margin-right: 10px
+		}
+	}
+}
