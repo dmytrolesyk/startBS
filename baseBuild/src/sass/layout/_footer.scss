@@ -26,60 +26,81 @@
 
 }
 
-.my-form {
-	margin-bottom: 30px;
-	display: flex;
-	flex-wrap: wrap;
+.error-text {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	padding: 5px 10px;
+	border-radius: $border-radius-base;
+	top: calc(100% + #{$error-text-offset});
+	left: 0;
+	background-color: $brand-danger;
+	color: $custom-white;
+	transition: .3s visibility, .3s opacity;
 
-	> * {
-		flex: 0 0 100%;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		transform: translateY(-100%);
+		border-width: 0 5px 5px 5px;
+		border-style: solid;
+		border-color: transparent transparent $brand-danger transparent;
 	}
 
-	@media (min-width: 768px) and (max-width: 991px) {
-		margin-bottom: 45px;
-		flex-wrap: nowrap;
-		justify-content: center;
-		
-		> * {
-			flex: 0 0 45%;
-			&:first-child {
-				margin-right: 15px;
+	@media (min-width: 768px) {
+		left: $grid-gutter-width / 2;
+	}
+}
+
+.subscribe-form {
+	padding: $grid-gutter-width 0;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		margin: 0 -$grid-gutter-width / 2;
+	}
+
+	> * {
+		@media screen and (min-width: 768px) {
+			padding: 0 $grid-gutter-width / 2;
+		}
+	}
+
+	.input-holder {
+		position: relative;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 768px) {
+			flex: 1 1 100%;
+		}
+	}
+
+	.form-control {
+
+		&:invalid {
+			+ .error-text {
+				visibility: visible;
+				opacity: 1;
 			}
 		}
 	}
 
-	@media (min-width: 992px) {
-		margin-bottom: 75px;
-		flex-wrap: nowrap;
-		justify-content: center;
-		.form-group {
-			flex: 0 0 70%;
-			margin-right: 15px;
+	.submit-holder {
+			@media screen and (max-width: 768px) {
+			flex: 0 0 auto;
 		}
 
-		button[type="submit"] {
-			flex: 0 0 20%;
-		}
-	}
-
-	.form-group {
-		[type="email"] {
+		.btn {
 			width: 100%;
 		}
 	}
 }
 
-.footer-list {
-	@media (max-width: 991px) {
-		margin-bottom: 50px;
-	}
-
-	@media (max-width: 768px) {
-		display: flex;
-		justify-content: flex-start;
-
-		> * {
-			margin-right: 10px
+.container {
+	&.narrow-container {
+		@media screen and (max-width: 992px) {
+			max-width: 800px;
 		}
 	}
 }
