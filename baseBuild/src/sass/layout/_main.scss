@@ -17,21 +17,14 @@ body {
 	}
 }
 
-.yellow-bg {
+.primary-bg {
 	background-color: $custom-yellow;
 }
 
-.common-icon {
-	
+[class^="icon-"], [class*=" icon-"] {
 	vertical-align: top;
 	font-size: 40px;
 	margin: 0 20px;
-}
-
-.img-holder {
-	@media (min-width: 768px) and (max-width: 992px) {
-		transform: rotate(90deg);
-	}
 }
 
 .slide {
@@ -48,20 +41,24 @@ body {
 	}
 
 	.icons-holder {
+		display: flex;
 		@media screen and (max-width: 991px) {
-			display: flex;
 			justify-content: space-around;
 			margin-bottom: 40px;
 		}
 		margin-top: 40px;
 	}
 
-	.row {
-
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+	li {
+		list-style: none;
 	}
+}
+
+
+.vertically-aligned-flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .slick-dots {
@@ -144,3 +141,6 @@ body {
 	}
 }
 
+.feature-icon-holder {
+	color: $text-color;
+}

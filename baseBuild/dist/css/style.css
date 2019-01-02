@@ -8704,17 +8704,23 @@ q:after {
 }
 
 @media screen and (min-width: 992px) {
-  .navbar {
-    margin-top: 50px;
+  .header {
+    padding-top: 50px;
   }
 }
 
 .navbar-nav li {
-  margin-right: 70px;
+  padding-right: 70px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav li {
+    border-bottom: 2px solid #898989;
+  }
 }
 
 .navbar-nav li:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .navbar-nav a {
@@ -8795,6 +8801,7 @@ q:after {
 
 .subscribe-form {
   padding: 30px 0;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -8802,7 +8809,6 @@ q:after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -15px;
   }
 }
 
@@ -8848,6 +8854,10 @@ q:after {
   }
 }
 
+footer .icons-holder li {
+  list-style: none;
+}
+
 body {
   min-width: 320px;
 }
@@ -8868,21 +8878,15 @@ body {
   }
 }
 
-.yellow-bg {
+.primary-bg {
   background-color: #fcdb00;
 }
 
-.common-icon {
+[class^="icon-"],
+[class*=" icon-"] {
   vertical-align: top;
   font-size: 40px;
   margin: 0 20px;
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .img-holder {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
 }
 
 .slide {
@@ -8900,21 +8904,25 @@ body {
 }
 
 .slide .icons-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 40px;
 }
 
 @media screen and (max-width: 991px) {
   .slide .icons-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 40px;
   }
 }
 
-.slide .row {
+.slide li {
+  list-style: none;
+}
+
+.vertically-aligned-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9006,3 +9014,9 @@ body {
     margin-bottom: 15px;
   }
 }
+
+.feature-icon-holder {
+  color: #313841;
+}
+
+
